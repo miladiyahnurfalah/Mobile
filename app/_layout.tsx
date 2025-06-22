@@ -29,16 +29,60 @@
 // }
 
 
+//ini yang benar
+// import { Stack } from 'expo-router';
 
-import { Stack } from 'expo-router';
+// export default function Layout() {
+//   return (
+//     <Stack
+//       screenOptions={{
+//         headerShown: false,
+//       }}
+//     />
+//   );
+// }
+
+
+// Layout.tsx
+import { Stack } from 'expo-router/stack';
 
 export default function Layout() {
   return (
-    <Stack
-      screenOptions={{
-        headerShown: false,
-      }}
-    />
+    <Stack>
+      {/* <Stack.Screen name="App" options={{ headerShown: false }} /> */}
+      <Stack.Screen name="index" options={{ headerShown: false }} />
+      <Stack.Screen name="SignupScreen" options={{ headerShown: false }} />
+      <Stack.Screen name="ForgotPasswordScreen" options={{ headerShown: false }} />
+      <Stack.Screen name="ProductScreen" options={{ headerShown: false }} />
+      <Stack.Screen name="CartScreen" options={{ headerShown: false }} />
+    </Stack>
   );
 }
+
+
+// import { Stack } from 'expo-router/stack';
+
+// export default function Layout() {
+//   return (
+//     <Stack>
+//       {/* <Stack.Screen name="(tabs)" options={{ headerShown: false }} /> */}
+//       <Stack.Screen name="index" options={{ headerShown: false }} />
+//       <Stack.Screen name="SignupScreen" options={{ headerShown: false }} />
+//       {/* <Stack.Screen name="TodoScreen" options={{ headerShown: false }} /> */}
+//       <Stack.Screen name="ForgotPasswordScreen" options={{ headerShown: false }} />
+//       <Stack.Screen name="ProductScreen" options={{ headerShown: false }} />
+//       <Stack.Screen name="CartScreen" options={{ headerShown: false }} />
+//     </Stack>
+//   );
+// }
+
+
+
+
+
+
+
+
+
+
 
